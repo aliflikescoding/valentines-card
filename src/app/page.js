@@ -24,7 +24,7 @@ export default function Home() {
   };
 
   // Total number of pages (including front and back covers)
-  const totalPages = 6;
+  const totalPages = 10;
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen overflow-hidden">
@@ -103,10 +103,52 @@ export default function Home() {
         </div>
 
         {/* Inner Pages */}
-        <div className="flex items-center p-[25px] rounded-l-[25px] justify-center bg-primary">
-          Page 1
+        {/* page 1 and 2 */}
+        <div className="flex items-center p-[25px] border-r-2 border-accent rounded-l-[25px] justify-center bg-primary">
+          <div className="w-full h-full flex justify-center items-center relative">
+            <div className="w-[300px] h-[350px] bg-white transform rotate-[-5deg] p-[12px]">
+              <Image
+                src={data.section1.image}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="w-full h-[275px] object-cover"
+              />
+
+              <div className="flex mt-[10px] justify-between">
+                <Image
+                  src={"/heart.png"}
+                  height={0}
+                  width={0}
+                  sizes="100vw"
+                  className="h-auto w-auto"
+                />
+                <Image
+                  src={"/heart.png"}
+                  height={0}
+                  width={0}
+                  sizes="100vw"
+                  className="h-auto w-auto"
+                />
+              </div>
+            </div>
+            <Image
+              src={"/quote-love.svg"}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="h-auto w-auto absolute left-0 top-16 transform rotate-[-9deg]"
+            />
+            <Image
+              src={"/quote-my-darling.svg"}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="h-auto w-[172px] absolute right-0 bottom-16 transform rotate-[2.5deg]"
+            />
+          </div>
         </div>
-        <div className="relative border-[10px] border-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full">
+        <div className="relative border-y-[10px] border-r-[10px] border-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full">
           {/* Background Image */}
           <Image
             src="/bg-paper.png"
@@ -135,15 +177,83 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center bg-white text-black text-lg">
-          Page 3
+
+        {/* page 3 and 4 */}
+        <div className="relative border-y-[10px] border-l-[10px] border-primary rounded-l-[25px] flex items-center justify-center text-black text-lg w-full h-full">
+          {/* Background Image */}
+          <Image
+            src="/bg-paper.png"
+            alt="Background Paper"
+            fill // Makes the image fill the parent container
+            style={{ objectFit: "cover" }} // Ensures the image covers the entire area
+            className="z-0 rounded-l-[25px]" // Places the image behind the content
+          />
+
+          {/* Page Content */}
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
         </div>
-        <div className="flex items-center justify-center bg-white text-black text-lg">
-          Page 4
+        <div className="relative border-y-[10px] border-r-[10px] border-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full">
+          {/* Background Image */}
+          <Image
+            src="/bg-paper.png"
+            alt="Background Paper"
+            fill // Makes the image fill the parent container
+            style={{ objectFit: "cover" }} // Ensures the image covers the entire area
+            className="z-0 rounded-r-[25px]" // Places the image behind the content
+          />
+
+          {/* Page Content */}
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
+        </div>
+
+        {/* page 5 and 6 */}
+        <div className="relative border-y-[10px] border-l-[10px] border-primary rounded-l-[25px] flex items-center justify-center text-black text-lg w-full h-full">
+          {/* Background Image */}
+          <Image
+            src="/bg-paper.png"
+            alt="Background Paper"
+            fill // Makes the image fill the parent container
+            style={{ objectFit: "cover" }} // Ensures the image covers the entire area
+            className="z-0 rounded-l-[25px]" // Places the image behind the content
+          />
+
+          {/* Page Content */}
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
+        </div>
+        <div className="relative border-y-[10px] border-r-[10px] border-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full">
+          {/* Background Image */}
+          <Image
+            src="/bg-paper.png"
+            alt="Background Paper"
+            fill // Makes the image fill the parent container
+            style={{ objectFit: "cover" }} // Ensures the image covers the entire area
+            className="z-0 rounded-r-[25px]" // Places the image behind the content
+          />
+
+          {/* Page Content */}
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
+        </div>
+
+        {/* page 7 and 8 */}
+        <div className="relative border-y-[10px] border-l-[10px] border-primary rounded-l-[25px] flex items-center justify-center text-black text-lg w-full h-full">
+          {/* Background Image */}
+          <Image
+            src="/bg-paper.png"
+            alt="Background Paper"
+            fill // Makes the image fill the parent container
+            style={{ objectFit: "cover" }} // Ensures the image covers the entire area
+            className="z-0 rounded-l-[25px]" // Places the image behind the content
+          />
+
+          {/* Page Content */}
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
+        </div>
+        <div className="relative bg-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full">
+          
         </div>
 
         {/* Back Cover */}
-        <div className="flex items-center justify-center bg-blue-500 text-white text-2xl font-bold">
+        <div className="flex items-center justify-center bg-primary rounded-l-[25px] p-[25px]">
           Back Cover
         </div>
       </HTMLFlipBook>
