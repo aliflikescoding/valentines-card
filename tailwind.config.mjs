@@ -8,8 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "var(--primary)",
+        accent: "var(--accent)",
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        playfair: ["Playfair Display", "serif"],
       },
     },
   },

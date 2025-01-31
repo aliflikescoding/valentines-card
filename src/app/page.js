@@ -2,6 +2,8 @@
 
 import { useRef, useState } from "react";
 import HTMLFlipBook from "react-pageflip";
+import Image from "next/image";
+import data from "./data";
 
 export default function Home() {
   const flipBookRef = useRef(null);
@@ -36,8 +38,68 @@ export default function Home() {
         onFlip={(e) => setCurrentPage(e.data)} // Update page number on flip
       >
         {/* Front Cover */}
-        <div className="flex items-center justify-center bg-blue-500 text-white text-2xl font-bold">
-          Front Cover
+        <div className="flex items-center p-[25px] rounded-r-[25px] justify-center bg-primary">
+          <div className="h-full w-full border-[4px] rounded-r-[25px] border-accent flex flex-col justify-center items-center">
+            <div className="relative">
+              <Image
+                src={"/cover-text.svg"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto w-auto"
+              />
+              <Image
+                src={"/hearts-card.png"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto absolute top-[-5px] right-[15px] w-[55px] transform rotate-[-10.85deg]"
+              />
+              <Image
+                src={"/hearts-card.png"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto absolute top-[-15px] left-[10px] w-[64px] transform rotate-[-15deg] scale-x-[-1]"
+              />
+              <Image
+                src={"/hearts-card.png"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto absolute top-[140px] left-[-25px] w-[53px] transform rotate-[-15deg] scale-x-[-1]"
+              />
+              <Image
+                src={"/hearts-card.png"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto absolute top-[146px] left-[141px] w-[55px] transform rotate-[-10.85deg]"
+              />
+              <Image
+                src={"/hearts-card.png"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto absolute top-[75px] right-[127px] w-[55px] transform rotate-[6.89deg]"
+              />
+              <Image
+                src={"/hearts-card.png"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto absolute right-[-15px] top-[146px] w-[64px] transform rotate-[-8.51deg]"
+              />
+            </div>
+            <div className="text-center text-[24px] font-medium font-playfair text-accent mt-[15px]">
+              <p>
+                to <span className="capitalize">{data.to}</span>
+              </p>
+              <p>
+                from <span className="capitalize">{data.from}</span>
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Inner Pages */}
