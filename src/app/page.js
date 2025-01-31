@@ -27,7 +27,7 @@ export default function Home() {
   const totalPages = 6;
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
+    <div className="flex flex-col justify-center items-center min-h-screen overflow-hidden">
       {/* FlipBook Component */}
       <HTMLFlipBook
         width={500} // Width of the book
@@ -103,11 +103,37 @@ export default function Home() {
         </div>
 
         {/* Inner Pages */}
-        <div className="flex items-center justify-center bg-white text-black text-lg">
+        <div className="flex items-center p-[25px] rounded-l-[25px] justify-center bg-primary">
           Page 1
         </div>
-        <div className="flex items-center justify-center bg-white text-black text-lg">
-          Page 2
+        <div className="relative border-[10px] border-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full">
+          {/* Background Image */}
+          <Image
+            src="/bg-paper.png"
+            alt="Background Paper"
+            fill // Makes the image fill the parent container
+            style={{ objectFit: "cover" }} // Ensures the image covers the entire area
+            className="z-0 rounded-r-[25px]" // Places the image behind the content
+          />
+
+          {/* Page Content */}
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium">
+            <div className="text-center max-w-[415px]">
+              <div className="relative">
+                <p className="text-accent relative">
+                  {data.section1.title}{" "}
+                  <Image
+                    src={"/hearts-card.png"}
+                    height={0}
+                    width={0}
+                    sizes="100vw"
+                    className="h-auto z-20 absolute top-[-15px] left-[80%] w-[30px] transform rotate-[-6.19deg]"
+                  />
+                </p>
+              </div>
+              <p className="mt-[24px]">{data.section1.text}</p>
+            </div>
+          </div>
         </div>
         <div className="flex items-center justify-center bg-white text-black text-lg">
           Page 3
