@@ -203,7 +203,48 @@ export default function Home() {
           />
 
           {/* Page Content */}
-          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium">
+            <div className="w-full h-full flex items-center justify-center relative text-center">
+              <p className="max-w-[400px] transform rotate-[2.5deg]">
+                {data.section2.text}
+              </p>
+              <Image
+                src={"/snoopy.png"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto w-[131px] absolute top-[40px] left-7 transform rotate-[5deg]"
+              />
+              <Image
+                src={"/hearts-card.png"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto absolute top-[140px] left-[200px] w-[97px] transform rotate-[-15deg] scale-x-[-1]"
+              />
+              <Image
+                src={"/quote-you-stole.svg"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto absolute top-[50px] right-[50px] w-[142px] transform rotate-[-10deg]"
+              />
+              <Image
+                src={"/guy-leg.png"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto w-[147px] absolute bottom-16 left-7 transform rotate-[5deg]"
+              />
+              <Image
+                src={"/quote-i-have.svg"}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="h-auto w-[257px] absolute bottom-14 right-5 transform rotate-[-6.19deg]"
+              />
+            </div>
+          </div>
         </div>
 
         {/* page 5 and 6 */}
@@ -248,9 +289,7 @@ export default function Home() {
           {/* Page Content */}
           <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
         </div>
-        <div className="relative bg-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full">
-          
-        </div>
+        <div className="relative bg-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full"></div>
 
         {/* Back Cover */}
         <div className="flex items-center justify-center bg-primary rounded-l-[25px] p-[25px]">
