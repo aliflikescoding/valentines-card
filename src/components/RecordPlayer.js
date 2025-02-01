@@ -40,6 +40,22 @@ const RecordPlayer = () => {
     }
   }, [isPlaying]);
 
+  // Effect to handle spacebar key press
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.code === "Space") {
+        event.preventDefault(); // Prevent default spacebar behavior (scrolling)
+        setIsPlaying((prev) => !prev);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   const play = () => {
     setIsPlaying((prev) => !prev);
   };

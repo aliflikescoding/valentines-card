@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react"; // Add useEffect
+import { useRef, useState, useEffect } from "react";
 import HTMLFlipBook from "react-pageflip";
 import Image from "next/image";
 import data from "./data";
@@ -23,6 +23,23 @@ export default function Home() {
       setCurrentPage((prev) => prev - 1); // Update page count
     }
   };
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "ArrowRight") {
+        handleNext();
+      } else if (event.key === "ArrowLeft") {
+        handlePrevious();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyPress);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [currentPage]); // Add currentPage as dependency
 
   // Total number of pages (including front and back covers)
   const totalPages = 10;
