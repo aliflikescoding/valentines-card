@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import HTMLFlipBook from "react-pageflip";
 import Image from "next/image";
 import data from "./data";
+import RecordPlayer from "@/components/RecordPlayer";
 
 export default function Home() {
   const flipBookRef = useRef(null);
@@ -28,6 +29,9 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen overflow-hidden">
+      {/* record player */}
+      {data.music && <RecordPlayer />}
+
       {/* FlipBook Component */}
       <HTMLFlipBook
         width={500} // Width of the book

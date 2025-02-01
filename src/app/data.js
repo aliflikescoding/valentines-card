@@ -1,4 +1,6 @@
 const data = {
+  music: true,
+  musicLink: "/music.mp3",
   to: "jane doe",
   from: "yours truly",
   section1: {
