@@ -15,6 +15,8 @@ export default {
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
+        lobster: ["Lobster", "serif"],
+        typewritter: ["Special Elite", "serif"],
       },
     },
   },

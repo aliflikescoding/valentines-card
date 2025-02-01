@@ -2,18 +2,40 @@
 
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import data from "@/app/data";
+
+// Create a singleton audio instance outside the component
+let globalAudio = null;
+if (typeof window !== 'undefined') {
+  globalAudio = new Audio(data.music ? data.musicLink : "");
+  globalAudio.loop = true;
+}
 
 const RecordPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
+  const pathname = usePathname();
 
+  // Effect to handle route changes
   useEffect(() => {
-    if (audioRef.current) {
+    // Don't stop the music on route changes
+    return () => {
+      if (globalAudio && isPlaying) {
+        globalAudio.play();
+      }
+    };
+  }, [pathname, isPlaying]);
+
+  // Effect to sync audio state
+  useEffect(() => {
+    if (globalAudio) {
       if (isPlaying) {
-        audioRef.current.play();
+        globalAudio.play().catch(error => {
+          console.log("Playback failed:", error);
+          setIsPlaying(false);
+        });
       } else {
-        audioRef.current.pause();
+        globalAudio.pause();
       }
     }
   }, [isPlaying]);
@@ -23,8 +45,7 @@ const RecordPlayer = () => {
   };
 
   return (
-    <div className="fixed bottom-4 left-4 cursor-pointer" onClick={play}>
-      <audio ref={audioRef} src={data.music ? data.musicLink : ""} loop />
+    <div className="fixed bottom-4 left-4 cursor-pointer z-50" onClick={play}>
       <div className="relative">
         {/* Record Player Base */}
         <Image
