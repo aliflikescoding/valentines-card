@@ -333,7 +333,7 @@ export default function Home() {
             <div className="w-[242px] h-[263px] absolute left-[10.5%] top-[15%] bg-white transform rotate-[-20deg] p-[10px]">
               <Image
                 alt="iamge"
-                src={data.section2.image1}
+                src={data.section3.image1}
                 height={0}
                 width={0}
                 sizes="100vw"
@@ -384,7 +384,7 @@ export default function Home() {
             <div className="h-[620px] w-[216px] flex flex-col justify-between p-[8px] bg-white absolute top-[-16px] right-[40px] transform rotate-[6.19deg]">
               <Image
                 alt="iamge"
-                src={data.section2.image1}
+                src={data.section3.image2}
                 height={0}
                 width={0}
                 sizes="100vw"
@@ -392,7 +392,7 @@ export default function Home() {
               />
               <Image
                 alt="iamge"
-                src={data.section2.image1}
+                src={data.section3.image3}
                 height={0}
                 width={0}
                 sizes="100vw"
@@ -400,7 +400,7 @@ export default function Home() {
               />
               <Image
                 alt="iamge"
-                src={data.section2.image1}
+                src={data.section3.image4}
                 height={0}
                 width={0}
                 sizes="100vw"
@@ -450,14 +450,93 @@ export default function Home() {
           />
 
           {/* Page Content */}
-          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[32px] font-playfair font-regular leading-[45px] text-center">
+            <p className="max-w-[376px]">
+              with that said I have a very importnant question to ask you
+            </p>
+            <Image
+              src={`/mutiple-rose.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[288px] h-[246px] absolute top-[2.5%] right-[-2.5%] transform rotate-[16deg]"
+            />
+            <Image
+              src={`/quote-i-swear.svg`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[250px] h-auto absolute top-[7.5%] left-[2.5%]"
+            />
+            <Image
+              src={`/hearts-1.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[68px] h-[60px] absolute top-[25%] left-[35%] transform rotate-[-5deg]"
+            />
+            <Image
+              src={`/hearts-2.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[53px] h-[46px] absolute top-[25%] left-[10%] transform rotate-[-7.5deg]"
+            />
+            <Image
+              src={`/question-1.svg`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[55px] h-[64px] absolute top-[35%] left-[5%] transform"
+            />
+            <Image
+              src={`/question3.svg`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[55px] h-[64px] absolute top-[55%] left-[10%] transform"
+            />
+            <Image
+              src={`/question2.svg`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[55px] h-[64px] absolute top-[35%] right-[5%] transform"
+            />
+            <Image
+              src={`/question4.svg`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[55px] h-[64px] absolute top-[55%] right-[15%] transform"
+            />
+            <Image
+              src={`/hearts-1.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[68px] h-[60px] absolute bottom-[12.5%] right-[15%] transform rotate-[-5deg]"
+            />
+            <Image
+              src={`/hearts-2.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[53px] h-[46px] absolute bottom-[12.5%] left-[15%] transform rotate-[13deg]"
+            />
+            <Image
+              src={`/hearts-3.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[121px] h-[106px] absolute bottom-[12.5%] left-[40%] transform rotate-[-9.77deg]"
+            />
+          </div>
         </div>
         <div className="relative bg-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full"></div>
 
         {/* Back Cover */}
-        <div className="flex items-center justify-center bg-primary rounded-l-[25px] p-[25px]">
-          Back Cover
-        </div>
+        <div className="flex items-center justify-center bg-primary rounded-l-[25px] p-[25px]"></div>
       </HTMLFlipBook>
 
       {/* Page Count */}

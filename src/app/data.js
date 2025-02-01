@@ -13,6 +13,10 @@ const data = {
   },
   section3: {
     text: "Love isn’t about perfection, but about choosing each other every day. With you, my heart is always home.",
+    image1: "/image1.jpg",
+    image2: "/image1.jpg",
+    image3: "/image1.jpg",
+    image4: "/image1.jpg",
   },
 };
 
