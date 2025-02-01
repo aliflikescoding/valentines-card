@@ -329,7 +329,42 @@ export default function Home() {
           />
 
           {/* Page Content */}
-          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium">
+            <div className="w-[242px] h-[263px] absolute left-[10.5%] top-[15%] bg-white transform rotate-[-20deg] p-[10px]">
+              <Image
+                alt="iamge"
+                src={data.section2.image1}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="w-full h-[211px] object-cover"
+              />
+            </div>
+            <Image
+              alt="iamge"
+              src={"/quote-you-are.svg"}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="h-[168px] w-[219px] absolute top-[5%] right-[5%] transform rotate-[5deg]"
+            />
+            <Image
+              alt="iamge"
+              src={"/quote-love-song.svg"}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="h-[177px] w-[264px] absolute bottom-[5%] left-[2.5%] transform rotate-[-7.5deg]"
+            />
+            <Image
+              alt="iamge"
+              src={"/rose.png"}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="h-[415px] w-[355px] absolute bottom-[5%] right-[-20%]"
+            />
+          </div>
         </div>
         <div className="relative border-y-[10px] border-r-[10px] border-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full">
           {/* Background Image */}
