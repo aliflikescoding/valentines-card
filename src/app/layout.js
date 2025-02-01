@@ -14,8 +14,16 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/hearts-1.png" type="image/png" />
       </head>
       <body>
+        <div className="hidden-above-1048">
+          <div className="h-screen w-screen text-center px-5 flex justify-center items-center">
+            <h1 className="text-4xl">
+              your screen has to be a minimum of 1048 pixels if on mobile use
+              the desktop view or use a laptop of other fitting screens
+            </h1>
+          </div>
+        </div>
         {data.music && <RecordPlayer />}
-        {children}
+        <div className="visible-above-1048">{children}</div>
       </body>
     </html>
   );

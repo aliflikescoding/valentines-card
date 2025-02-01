@@ -17,3 +17,21 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+@media (min-width: 1048px) {
+  .visible-above-1048 {
+    display: block;
+  }
+  .hidden-above-1048 {
+    display: none;
+  }
+}
+
+@media (max-width: 1047px) {
+  .visible-above-1048 {
+    display: none;
+  }
+  .hidden-above-1048 {
+    display: block;
+  }
+}

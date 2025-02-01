@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react"; // Add useEffect
 import HTMLFlipBook from "react-pageflip";
 import Image from "next/image";
 import data from "./data";
