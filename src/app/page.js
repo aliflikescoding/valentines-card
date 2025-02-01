@@ -538,27 +538,34 @@ export default function Home() {
         {/* Back Cover */}
         <div className="flex items-center justify-center bg-primary rounded-l-[25px] p-[25px]"></div>
       </HTMLFlipBook>
-
-      {/* Page Count */}
-      <div className="mt-2 text-lg font-semibold">
-        Page {currentPage + 1} of {totalPages}
-      </div>
-
+      
       {/* Navigation Buttons */}
-      <div className="mt-4">
+      <div className="mt-4 flex gap-[20px]">
         <button
           onClick={handlePrevious}
           disabled={currentPage === 0} // Disable "Previous" on the first page
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg mr-2 disabled:bg-gray-400"
+          className=""
         >
-          Previous
+          <Image
+            src={`/previous.png`}
+            height={0}
+            width={0}
+            sizes="100vw"
+            className="w-[80px] h-[90px]"
+          />
         </button>
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages - 1} // Disable "Next" on the last page
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg disabled:bg-gray-400"
+          className=""
         >
-          Next
+          <Image
+            src={`/next.png`}
+            height={0}
+            width={0}
+            sizes="100vw"
+            className="w-[80px] h-[90px]"
+          />
         </button>
       </div>
     </div>
