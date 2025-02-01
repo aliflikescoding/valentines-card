@@ -7,7 +7,7 @@ import data from "@/app/data";
 
 // Create a singleton audio instance outside the component
 let globalAudio = null;
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   globalAudio = new Audio(data.music ? data.musicLink : "");
   globalAudio.loop = true;
 }
@@ -30,7 +30,7 @@ const RecordPlayer = () => {
   useEffect(() => {
     if (globalAudio) {
       if (isPlaying) {
-        globalAudio.play().catch(error => {
+        globalAudio.play().catch((error) => {
           console.log("Playback failed:", error);
           setIsPlaying(false);
         });
@@ -46,7 +46,7 @@ const RecordPlayer = () => {
 
   return (
     <div className="fixed bottom-4 left-4 cursor-pointer z-50" onClick={play}>
-      <div className="relative">
+      <div className="relative w-[20vw] h-[20vw] max-w-[321px] max-h-[321px] min-w-[150px] min-h-[150px]">
         {/* Record Player Base */}
         <Image
           alt="Record Player"
@@ -54,7 +54,7 @@ const RecordPlayer = () => {
           height={0}
           width={0}
           sizes="100vw"
-          className="w-[321px] h-[321px]"
+          className="w-full h-full"
         />
 
         {/* Record Player Arm with Smooth Rotation */}
@@ -64,10 +64,10 @@ const RecordPlayer = () => {
           height={0}
           width={0}
           sizes="100vw"
-          className={`w-[107px] h-[122px] absolute z-10 transform transition-transform duration-300 ${
+          className={`w-[33.33%] h-[38%] absolute z-10 transform transition-transform duration-300 ${
             isPlaying
-              ? "rotate-[0deg] right-[41px] bottom-[38px]"
-              : "rotate-[30deg] right-[15px] bottom-[54px]"
+              ? "rotate-[0deg] right-[12.5%] bottom-[12%]"
+              : "rotate-[30deg] right-[4.5%] bottom-[16.5%]"
           }`}
         />
 
@@ -78,7 +78,7 @@ const RecordPlayer = () => {
           height={0}
           width={0}
           sizes="100vw"
-          className={`w-[201px] h-[201px] absolute top-[29px] left-[21px] ${
+          className={`w-[62.5%] h-[62.5%] absolute top-[9%] left-[6.5%] ${
             isPlaying ? "animate-spin" : ""
           }`}
           style={{
