@@ -42,6 +42,7 @@ export default function Home() {
           <div className="h-full w-full border-[4px] rounded-r-[25px] border-accent flex flex-col justify-center items-center">
             <div className="relative">
               <Image
+                alt="iamge"
                 src={"/cover-text.svg"}
                 height={0}
                 width={0}
@@ -49,6 +50,7 @@ export default function Home() {
                 className="h-auto w-auto"
               />
               <Image
+                alt="iamge"
                 src={"/hearts-card.png"}
                 height={0}
                 width={0}
@@ -56,6 +58,7 @@ export default function Home() {
                 className="h-auto absolute top-[-5px] right-[15px] w-[55px] transform rotate-[-10.85deg]"
               />
               <Image
+                alt="iamge"
                 src={"/hearts-card.png"}
                 height={0}
                 width={0}
@@ -63,6 +66,7 @@ export default function Home() {
                 className="h-auto absolute top-[-15px] left-[10px] w-[64px] transform rotate-[-15deg] scale-x-[-1]"
               />
               <Image
+                alt="iamge"
                 src={"/hearts-card.png"}
                 height={0}
                 width={0}
@@ -70,6 +74,7 @@ export default function Home() {
                 className="h-auto absolute top-[140px] left-[-25px] w-[53px] transform rotate-[-15deg] scale-x-[-1]"
               />
               <Image
+                alt="iamge"
                 src={"/hearts-card.png"}
                 height={0}
                 width={0}
@@ -77,6 +82,7 @@ export default function Home() {
                 className="h-auto absolute top-[146px] left-[141px] w-[55px] transform rotate-[-10.85deg]"
               />
               <Image
+                alt="iamge"
                 src={"/hearts-card.png"}
                 height={0}
                 width={0}
@@ -84,6 +90,7 @@ export default function Home() {
                 className="h-auto absolute top-[75px] right-[127px] w-[55px] transform rotate-[6.89deg]"
               />
               <Image
+                alt="iamge"
                 src={"/hearts-card.png"}
                 height={0}
                 width={0}
@@ -108,6 +115,7 @@ export default function Home() {
           <div className="w-full h-full flex justify-center items-center relative">
             <div className="w-[300px] h-[350px] bg-white transform rotate-[-5deg] p-[12px]">
               <Image
+                alt="iamge"
                 src={data.section1.image}
                 height={0}
                 width={0}
@@ -117,6 +125,7 @@ export default function Home() {
 
               <div className="flex mt-[10px] justify-between">
                 <Image
+                  alt="iamge"
                   src={"/heart.png"}
                   height={0}
                   width={0}
@@ -190,7 +199,63 @@ export default function Home() {
           />
 
           {/* Page Content */}
-          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
+          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium">
+            <div className="w-[237px] h-[257px] absolute top-[35px] left-[218px] bg-white transform rotate-[-5deg] p-[12px]">
+              <Image
+                alt="iamge"
+                src={data.section2.image1}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="w-full h-[218px] object-cover"
+              />
+            </div>
+            <div className="w-[237px] h-[257px] absolute left-[31px] bottom-[35px] bg-white transform rotate-[-5deg] p-[12px]">
+              <Image
+                alt="iamge"
+                src={data.section2.image2}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="w-full h-[218px] object-cover"
+              />
+            </div>
+            <Image
+              src={`/hearts-3.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[109px] h-[96px] absolute top-[42.5%] left-[40%] transform rotate-[3.45deg]"
+            />
+            <Image
+              src={`/hearts-1.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[60.63px] h-[53.35px] absolute top-[42.5%] left-[6%] transform rotate-[-5deg]"
+            />
+            <Image
+              src={`/hearts-2.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[53px] h-[45.3px] absolute top-[37.5%] right-[6%] transform rotate-[5deg]"
+            />
+            <Image
+              src={`/quote-will-never.svg`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-full h-[216px] absolute bottom-[73px] right-[-140px]"
+            />
+            <Image
+              src={`/quote-i-fell.svg`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-full h-[159px] absolute top-[73px] left-[-140px]"
+            />
+          </div>
         </div>
         <div className="relative border-y-[10px] border-r-[10px] border-primary rounded-r-[25px] flex items-center justify-center text-black text-lg w-full h-full">
           {/* Background Image */}
@@ -209,6 +274,7 @@ export default function Home() {
                 {data.section2.text}
               </p>
               <Image
+                alt="iamge"
                 src={"/snoopy.png"}
                 height={0}
                 width={0}
@@ -216,6 +282,7 @@ export default function Home() {
                 className="h-auto w-[131px] absolute top-[40px] left-7 transform rotate-[5deg]"
               />
               <Image
+                alt="iamge"
                 src={"/hearts-card.png"}
                 height={0}
                 width={0}
@@ -223,6 +290,7 @@ export default function Home() {
                 className="h-auto absolute top-[140px] left-[200px] w-[97px] transform rotate-[-15deg] scale-x-[-1]"
               />
               <Image
+                alt="iamge"
                 src={"/quote-you-stole.svg"}
                 height={0}
                 width={0}
@@ -230,6 +298,7 @@ export default function Home() {
                 className="h-auto absolute top-[50px] right-[50px] w-[142px] transform rotate-[-10deg]"
               />
               <Image
+                alt="iamge"
                 src={"/guy-leg.png"}
                 height={0}
                 width={0}
@@ -237,6 +306,7 @@ export default function Home() {
                 className="h-auto w-[147px] absolute bottom-16 left-7 transform rotate-[5deg]"
               />
               <Image
+                alt="iamge"
                 src={"/quote-i-have.svg"}
                 height={0}
                 width={0}
@@ -272,7 +342,37 @@ export default function Home() {
           />
 
           {/* Page Content */}
-          <div className="z-10 relative w-full h-full flex justify-center items-center text-[24px] font-playfair font-medium"></div>
+          <div className="z-10 relative w-full h-full text-[24px] font-playfair font-medium">
+            <p className="max-w-[160px] text-center ml-[66px] mt-[36px]">
+              {data.section3.text}
+            </p>
+            <div className="h-[620px] w-[216px] flex flex-col justify-between p-[8px] bg-white absolute top-[-16px] right-[40px] transform rotate-[6.19deg]">
+              <Image
+                alt="iamge"
+                src={data.section2.image1}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="w-full h-[195px] object-cover"
+              />
+              <Image
+                alt="iamge"
+                src={data.section2.image1}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="w-full h-[195px] object-cover"
+              />
+              <Image
+                alt="iamge"
+                src={data.section2.image1}
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="w-full h-[195px] object-cover"
+              />
+            </div>
+          </div>
         </div>
 
         {/* page 7 and 8 */}

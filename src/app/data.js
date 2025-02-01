@@ -8,6 +8,11 @@ const data = {
   },
   section2: {
     text: "Every love story is beautiful, but ours is my favorite. You make my world brighter, and I’m grateful always.",
+    image1: "/image1.jpg",
+    image2: "/image1.jpg",
+  },
+  section3: {
+    text: "Love isn’t about perfection, but about choosing each other every day. With you, my heart is always home.",
   },
 };
 
