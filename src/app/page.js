@@ -372,6 +372,34 @@ export default function Home() {
                 className="w-full h-[195px] object-cover"
               />
             </div>
+            <Image
+              src={`/hearts-3.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[111px] h-[97px] absolute top-[42.5%] left-[27.5%] transform rotate-[-5deg]"
+            />
+            <Image
+              src={`/hearts-1.png`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[88px] h-[77px] absolute top-[42.5%] left-[5%] transform rotate-[-20deg]"
+            />
+            <Image
+              src={`/quote-fall-in-love.svg`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[146px] h-[35px] absolute top-[-4%] left-[45%] transform"
+            />
+            <Image
+              src={`/quote-fell-in.svg`}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-[232px] h-[80px] absolute bottom-[10%] left-[5%] transform"
+            />
           </div>
         </div>
 
